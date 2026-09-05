@@ -26,6 +26,8 @@ guilds:
 
   encounters:
 
+  # ULTIMATES
+
   - ids: [1060, 1047, 1039, 1073]
     name: "The Unending Coil of Bahamut (Ultimate)"
     defaultRoles: false
@@ -82,6 +84,8 @@ guilds:
     - name: "UMAD Cleared"
       type: "Cleared"
 
+  # DAWNTRAIL SAVAGE TIERS
+
   - ids: [96]
     name: "AAC Light-heavyweight M4 (Savage)"
     defaultRoles: false
@@ -105,6 +109,8 @@ guilds:
     roles:
     - name: "Heavyweight Cleared"
       type: "Cleared"
+
+  # VERIFY MENU
 
   menu:
   - name: menuMain
@@ -127,7 +133,7 @@ guilds:
 
 
 # ============================================================
-# DANCE AFTER DEATH - REAL SERVER
+# DANCE AFTER DEATH - PRODUCTION SERVER
 # ============================================================
 
 - name: "Dance After Death"
@@ -145,12 +151,14 @@ guilds:
     menu: true
 
   guildId: 637885000850866206
-  channelId: 736830525368434718
+  channelId: 764294199427465246
 
   physicalDatacenters:
   - name: "NA"
 
   encounters:
+
+  # ULTIMATES
 
   - ids: [1060, 1047, 1039, 1073]
     name: "The Unending Coil of Bahamut (Ultimate)"
@@ -208,6 +216,8 @@ guilds:
     - name: "UMAD Cleared"
       type: "Cleared"
 
+  # DAWNTRAIL SAVAGE TIERS
+
   - ids: [96]
     name: "AAC Light-heavyweight M4 (Savage)"
     defaultRoles: false
@@ -231,6 +241,8 @@ guilds:
     roles:
     - name: "Heavyweight Cleared"
       type: "Cleared"
+
+  # VERIFY MENU
 
   menu:
   - name: menuMain
