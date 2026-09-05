@@ -1,13 +1,16 @@
 guilds:
 - name: "Brinkers"
+
   roles:
     relevantParsing: false
     relevantFlexing: false
     relevantRepetition: false
     legend: true
     ultimateFlexing: false
-    ultimateRepetition: true
+    ultimateRepetition: false
     datacenter: false
+    nameColor: false
+    reclear: false
     menu: true
 
   guildId: 1209347741038280725
@@ -17,67 +20,141 @@ guilds:
   - name: "NA"
 
   encounters:
+
+  # -------------------------
+  # ULTIMATES
+  # -------------------------
+
   - ids: [1060, 1047, 1039, 1073]
     name: "The Unending Coil of Bahamut (Ultimate)"
-    defaultRoles: true
-    totalWeaponsAvailable: 15
-    the: "Legendary"
+    defaultRoles: false
     difficulty: "Ultimate"
+    roles:
+    - name: "UCoB Cleared"
+      type: "Cleared"
 
   - ids: [1061, 1048, 1042, 1074]
     name: "The Weapon's Refrain (Ultimate)"
-    defaultRoles: true
-    totalWeaponsAvailable: 15
-    the: "Ultimate"
+    defaultRoles: false
     difficulty: "Ultimate"
+    roles:
+    - name: "UWU Cleared"
+      type: "Cleared"
 
   - ids: [1062, 1050, 1075]
     name: "The Epic of Alexander (Ultimate)"
-    defaultRoles: true
-    totalWeaponsAvailable: 17
-    the: "Perfect"
+    defaultRoles: false
     difficulty: "Ultimate"
+    roles:
+    - name: "TEA Cleared"
+      type: "Cleared"
 
   - ids: [1065, 1076]
     name: "Dragonsong's Reprise (Ultimate)"
-    defaultRoles: true
-    totalWeaponsAvailable: 19
-    the: "Heavenly"
+    defaultRoles: false
     difficulty: "Ultimate"
+    roles:
+    - name: "DSR Cleared"
+      type: "Cleared"
 
   - ids: [1068, 1077]
     name: "The Omega Protocol (Ultimate)"
-    defaultRoles: true
-    totalWeaponsAvailable: 21
-    the: "Alpha"
+    defaultRoles: false
     difficulty: "Ultimate"
+    roles:
+    - name: "TOP Cleared"
+      type: "Cleared"
 
   - ids: [1079]
     name: "Futures Rewritten (Ultimate)"
-    defaultRoles: true
-    totalWeaponsAvailable: 21
-    the: "Roommate"
+    defaultRoles: false
     difficulty: "Ultimate"
+    roles:
+    - name: "FRU Cleared"
+      type: "Cleared"
 
   - ids: [1085]
     name: "Dancing Mad (Ultimate)"
-    defaultRoles: true
-    totalWeaponsAvailable: 21
-    the: "Mad"
+    defaultRoles: false
     difficulty: "Ultimate"
+    roles:
+    - name: "UMAD Cleared"
+      type: "Cleared"
+
+  # -------------------------
+  # DAWNTRAIL SAVAGE TIERS
+  # Final-floor clear = tier clear
+  # -------------------------
+
+  - ids: [96]
+    name: "AAC Light-heavyweight M4 (Savage)"
+    defaultRoles: false
+    difficulty: "Savage"
+    roles:
+    - name: "Light-heavyweight Cleared"
+      type: "Cleared"
+
+  - ids: [100]
+    name: "AAC Cruiserweight M4 (Savage)"
+    defaultRoles: false
+    difficulty: "Savage"
+    roles:
+    - name: "Cruiserweight Cleared"
+      type: "Cleared"
+
+  - ids: [105]
+    name: "AAC Heavyweight M4 (Savage)"
+    defaultRoles: false
+    difficulty: "Savage"
+    roles:
+    - name: "Heavyweight Cleared"
+      type: "Cleared"
+
+  # -------------------------
+  # ALL ULTIMATES
+  # Hide the intermediate Legend-count roles.
+  # Rename Septuple Legend to our desired role.
+  # -------------------------
+
+  reconfigureRoles:
+  - from: "The Legend"
+    skip: true
+
+  - from: "The Double Legend"
+    skip: true
+
+  - from: "The Triple Legend"
+    skip: true
+
+  - from: "The Quad Legend"
+    skip: true
+
+  - from: "The Penta Legend"
+    skip: true
+
+  - from: "The Sexa Legend"
+    skip: true
+
+  - from: "The Septuple Legend"
+    to: "All Ultimates Cleared"
+
+  # -------------------------
+  # VERIFY MENU
+  # -------------------------
 
   menu:
   - name: menuMain
     type: menuMain
     title: __Verify Clears__
     description: |
-      Use the button below to verify your FFXIV character and assign roles based on your FFLogs clears.
+      Verify your FFXIV character to receive roles based on your confirmed FFLogs clears.
+
     fields:
     - name: Verify Clears
       value: >
-        Verifying your character will confirm ownership of your FFXIV character
-        and analyze the FFLogs attached to it. Once verified, Clearingway will
-        assign roles based on your confirmed Ultimate clears.
+        Clearingway will verify your character and check FFLogs for Ultimate
+        and Savage clears. Eligible roles will be assigned automatically.
+
     buttons:
     - label: Verify Clears
       style: 3
