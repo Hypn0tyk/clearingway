@@ -1,4 +1,9 @@
 guilds:
+
+# ============================================================
+# BRINKERS - TEST SERVER
+# ============================================================
+
 - name: "Brinkers"
 
   roles:
@@ -20,10 +25,6 @@ guilds:
   - name: "NA"
 
   encounters:
-
-  # =========================
-  # ULTIMATES
-  # =========================
 
   - ids: [1060, 1047, 1039, 1073]
     name: "The Unending Coil of Bahamut (Ultimate)"
@@ -81,11 +82,6 @@ guilds:
     - name: "UMAD Cleared"
       type: "Cleared"
 
-  # =========================
-  # DAWNTRAIL SAVAGE TIERS
-  # Final-floor clear = tier clear
-  # =========================
-
   - ids: [96]
     name: "AAC Light-heavyweight M4 (Savage)"
     defaultRoles: false
@@ -110,9 +106,131 @@ guilds:
     - name: "Heavyweight Cleared"
       type: "Cleared"
 
-  # =========================
-  # VERIFY MENU
-  # =========================
+  menu:
+  - name: menuMain
+    type: menuMain
+    title: __Verify Clears__
+    description: |
+      Verify your FFXIV character to receive roles based on your confirmed FFLogs clears.
+
+    fields:
+    - name: Verify Clears
+      value: >
+        Clearingway will verify your character and check FFLogs for Ultimate
+        and Savage clears. Eligible roles will be assigned automatically.
+
+    buttons:
+    - label: Verify Clears
+      style: 3
+      menuName: menuVerify
+      menuType: menuVerify
+
+
+# ============================================================
+# DANCE AFTER DEATH - REAL SERVER
+# ============================================================
+
+- name: "Dance After Death"
+
+  roles:
+    relevantParsing: false
+    relevantFlexing: false
+    relevantRepetition: false
+    legend: true
+    ultimateFlexing: false
+    ultimateRepetition: false
+    datacenter: false
+    nameColor: false
+    reclear: false
+    menu: true
+
+  guildId: 637885000850866206
+  channelId: 736830525368434718
+
+  physicalDatacenters:
+  - name: "NA"
+
+  encounters:
+
+  - ids: [1060, 1047, 1039, 1073]
+    name: "The Unending Coil of Bahamut (Ultimate)"
+    defaultRoles: false
+    difficulty: "Ultimate"
+    roles:
+    - name: "UCoB Cleared"
+      type: "Cleared"
+
+  - ids: [1061, 1048, 1042, 1074]
+    name: "The Weapon's Refrain (Ultimate)"
+    defaultRoles: false
+    difficulty: "Ultimate"
+    roles:
+    - name: "UWU Cleared"
+      type: "Cleared"
+
+  - ids: [1062, 1050, 1075]
+    name: "The Epic of Alexander (Ultimate)"
+    defaultRoles: false
+    difficulty: "Ultimate"
+    roles:
+    - name: "TEA Cleared"
+      type: "Cleared"
+
+  - ids: [1065, 1076]
+    name: "Dragonsong's Reprise (Ultimate)"
+    defaultRoles: false
+    difficulty: "Ultimate"
+    roles:
+    - name: "DSR Cleared"
+      type: "Cleared"
+
+  - ids: [1068, 1077]
+    name: "The Omega Protocol (Ultimate)"
+    defaultRoles: false
+    difficulty: "Ultimate"
+    roles:
+    - name: "TOP Cleared"
+      type: "Cleared"
+
+  - ids: [1079]
+    name: "Futures Rewritten (Ultimate)"
+    defaultRoles: false
+    difficulty: "Ultimate"
+    roles:
+    - name: "FRU Cleared"
+      type: "Cleared"
+
+  - ids: [1085]
+    name: "Dancing Mad (Ultimate)"
+    defaultRoles: false
+    difficulty: "Ultimate"
+    roles:
+    - name: "UMAD Cleared"
+      type: "Cleared"
+
+  - ids: [96]
+    name: "AAC Light-heavyweight M4 (Savage)"
+    defaultRoles: false
+    difficulty: "Savage"
+    roles:
+    - name: "Light-heavyweight Cleared"
+      type: "Cleared"
+
+  - ids: [100]
+    name: "AAC Cruiserweight M4 (Savage)"
+    defaultRoles: false
+    difficulty: "Savage"
+    roles:
+    - name: "Cruiserweight Cleared"
+      type: "Cleared"
+
+  - ids: [105]
+    name: "AAC Heavyweight M4 (Savage)"
+    defaultRoles: false
+    difficulty: "Savage"
+    roles:
+    - name: "Heavyweight Cleared"
+      type: "Cleared"
 
   menu:
   - name: menuMain
