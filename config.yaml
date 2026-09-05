@@ -8,6 +8,7 @@ guilds:
     ultimateFlexing: false
     ultimateRepetition: true
     datacenter: false
+    menu: true
 
   guildId: 1209347741038280725
   channelId: 1209347742174806048
@@ -64,3 +65,21 @@ guilds:
     totalWeaponsAvailable: 21
     the: "Mad"
     difficulty: "Ultimate"
+
+  menu:
+  - name: menuMain
+    type: menuMain
+    title: __Verify Clears__
+    description: |
+      Use the button below to verify your FFXIV character and assign roles based on your FFLogs clears.
+    fields:
+    - name: Verify Clears
+      value: >
+        Verifying your character will confirm ownership of your FFXIV character
+        and analyze the FFLogs attached to it. Once verified, Clearingway will
+        assign roles based on your confirmed Ultimate clears.
+    buttons:
+    - label: Verify Clears
+      style: 3
+      menuName: menuVerify
+      menuType: menuVerify
