@@ -21,9 +21,9 @@ guilds:
 
   encounters:
 
-  # -------------------------
+  # =========================
   # ULTIMATES
-  # -------------------------
+  # =========================
 
   - ids: [1060, 1047, 1039, 1073]
     name: "The Unending Coil of Bahamut (Ultimate)"
@@ -81,10 +81,10 @@ guilds:
     - name: "UMAD Cleared"
       type: "Cleared"
 
-  # -------------------------
+  # =========================
   # DAWNTRAIL SAVAGE TIERS
   # Final-floor clear = tier clear
-  # -------------------------
+  # =========================
 
   - ids: [96]
     name: "AAC Light-heavyweight M4 (Savage)"
@@ -110,37 +110,9 @@ guilds:
     - name: "Heavyweight Cleared"
       type: "Cleared"
 
-  # -------------------------
-  # ALL ULTIMATES
-  # Hide the intermediate Legend-count roles.
-  # Rename Septuple Legend to our desired role.
-  # -------------------------
-
-  reconfigureRoles:
-  - from: "The Legend"
-    skip: true
-
-  - from: "The Double Legend"
-    skip: true
-
-  - from: "The Triple Legend"
-    skip: true
-
-  - from: "The Quad Legend"
-    skip: true
-
-  - from: "The Penta Legend"
-    skip: true
-
-  - from: "The Sexa Legend"
-    skip: true
-
-  - from: "The Septuple Legend"
-    to: "All Ultimates Cleared"
-
-  # -------------------------
+  # =========================
   # VERIFY MENU
-  # -------------------------
+  # =========================
 
   menu:
   - name: menuMain
